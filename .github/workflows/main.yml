@@ -20,7 +20,7 @@ jobs:
   deploy:
     runs-on: ubuntu-tatest
     needs: [lint]
-    if: github.ref == 'refs/head/master'
+    if: github.ref == 'refs/heads/master'
   
     steps:
         - name: checkout
